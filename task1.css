@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #fafaf8;
+    color: black;
+    
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 1rem;
+}
+aside img{
+    padding-left: 6rem;
+}
+.nav-items ul{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+.nav-items a{
+    text-decoration: none;
+    color: black;
+}
+.nav-items a:hover{
+    color: rgb(79, 72, 72);
+}
+.header-login{
+    padding-right: 3rem;    
+}
+.header-login a{
+    text-decoration: none;
+
+}
+.header-login{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-right: 6rem;
+}
+aside.header-login>a{
+    padding: .4rem .7rem;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: .35rem;
+}
+aside.header-login>a:first-child {
+    color: orangered;
+    background-color: transparent;
+}
+aside.header-login>a:first-child:hover{
+    color: white;
+    background-color: orangered;
+}
+aside.header-login>a:last-child{
+    color: white;
+    background-color: orangered;
+}
+#menus-toggle{
+    display: none;
+}
+menu-icon{
+    display: none;
+    justify-content: ;
+    align-items: center;
+    cursor: pointer;
+    padding: 2px;
+    color: black;
+    border-radius: solid 3px;
+}
+.menu-icon{
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+}
+@media (max-width: 768px) {
+    .menu-icon {
+    display: flex;
+    justify-content: flex-end;
+
+  }
+  .nav-items> ul{
+    width: 100%;
+    background-color: bisque;
+    display: block;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  #menus-toggle:checked + .menu-icon + .nav-items {
+    display: flex;
+  }
+  .header-login {
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 1rem;
+  }
+}
